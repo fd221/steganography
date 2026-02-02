@@ -10,9 +10,8 @@ from tkinter import filedialog, messagebox
 from tkinterdnd2 import DND_FILES, TkinterDnD
 
 # Подключаем твою логику
-from injector import start_injection
-from extractor import start_decryption
-
+from core.injector import start_injection
+from core.extractor import start_decryption
 
 def _clean_dnd_path(raw: str) -> str:
     raw = raw.strip()
